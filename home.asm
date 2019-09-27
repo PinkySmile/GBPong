@@ -20,16 +20,16 @@ SECTION "rst 38", ROM0
 ; Hardware interrupts
 SECTION "vblank", ROM0
 	reti
-	nop
+
 SECTION "hblank", ROM0
 	reti
-	nop
+
 SECTION "timer", ROM0 
 	reti
-	nop
+
 SECTION "serial", ROM0
 	reti
-	nop
+
 SECTION "joypad", ROM0
 	reti
 
