@@ -18,6 +18,9 @@ OBJS = $(SRCS:%.asm=%.o)
 
 all:	$(NAME).gbc
 
+run:	all
+	wine "$(BGB_PATH)" ./$(NAME).gbc
+
 %.o : %.asm
 	$(ASM) $(ASMFLAGS) -o $@ $<
 
